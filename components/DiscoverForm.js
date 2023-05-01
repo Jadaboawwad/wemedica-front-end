@@ -1,6 +1,6 @@
 const stroke_url = process.env.NEXT_PUBLIC_RESOURCE_URL_1;
 const hepatitis_url = process.env.NEXT_PUBLIC_RESOURCE_URL_2;
-const userEmail = "";
+let userEmail = "";
 if (typeof window !== "undefined") {
   userEmail = JSON.parse(localStorage.getItem("Auth")).email;
 }

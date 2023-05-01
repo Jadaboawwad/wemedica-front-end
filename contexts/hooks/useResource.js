@@ -6,7 +6,7 @@ const hepatitis_url = process.env.NEXT_PUBLIC_API_URL_2;
 const cancer_url = process.env.NEXT_PUBLIC_API_URL_3;
 
 export default function useResource() {
-  const { tokens, logout } = useAuth();
+  let { tokens,  } = useAuth();
   if (typeof window !== "undefined") {
     tokens = JSON.parse(localStorage.getItem("Tokens"));
   }
