@@ -7,8 +7,7 @@ import {
   LightningBoltIcon,
   ScaleIcon,
 } from "@heroicons/react/outline";
-import { route } from "next/dist/server/router";
-
+  
 const features = [
   {
     name: "Online data store of test results",
